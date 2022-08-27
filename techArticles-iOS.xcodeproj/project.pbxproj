@@ -17,6 +17,11 @@
 		3288CDAA28B9BE98007E969D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD8028B9BE95007E969D /* ContentView.swift */; };
 		3288CDAB28B9BE98007E969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288CD8128B9BE98007E969D /* Assets.xcassets */; };
 		3288CDAC28B9BE98007E969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288CD8128B9BE98007E969D /* Assets.xcassets */; };
+		3288CDBE28B9FC3B007E969D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDBD28B9FC3B007E969D /* Theme.swift */; };
+		3288CDC028BA00B7007E969D /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDBF28BA00B7007E969D /* DailyScrum.swift */; };
+		3288CDC228BA029C007E969D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDC128BA029C007E969D /* CardView.swift */; };
+		3288CDC428BA0382007E969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288CDC328BA0382007E969D /* Assets.xcassets */; };
+		3288CDC628BA4D2A007E969D /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDC528BA4D2A007E969D /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		3288CD9F28B9BE98007E969D /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3288CDA328B9BE98007E969D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		3288CDA528B9BE98007E969D /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		3288CDBD28B9FC3B007E969D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3288CDBF28BA00B7007E969D /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		3288CDC128BA029C007E969D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3288CDC328BA0382007E969D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3288CDC528BA4D2A007E969D /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,8 @@
 		3288CD7928B9BE94007E969D = {
 			isa = PBXGroup;
 			children = (
+				3288CDC828BA5497007E969D /* Theme */,
+				3288CDBC28B9FC11007E969D /* Models */,
 				3288CD7E28B9BE95007E969D /* Shared */,
 				3288CD8D28B9BE98007E969D /* macOS */,
 				3288CD9628B9BE98007E969D /* Tests iOS */,
@@ -97,8 +109,10 @@
 		3288CD7E28B9BE95007E969D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3288CDC328BA0382007E969D /* Assets.xcassets */,
 				3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */,
 				3288CD8028B9BE95007E969D /* ContentView.swift */,
+				3288CDC128BA029C007E969D /* CardView.swift */,
 				3288CD8128B9BE98007E969D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +153,23 @@
 				3288CDA528B9BE98007E969D /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		3288CDBC28B9FC11007E969D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3288CDBF28BA00B7007E969D /* DailyScrum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3288CDC828BA5497007E969D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				3288CDBD28B9FC3B007E969D /* Theme.swift */,
+				3288CDC528BA4D2A007E969D /* TrailingIconLabelStyle.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3288CDC428BA0382007E969D /* Assets.xcassets in Resources */,
 				3288CDAB28B9BE98007E969D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3288CDC028BA00B7007E969D /* DailyScrum.swift in Sources */,
+				3288CDC628BA4D2A007E969D /* TrailingIconLabelStyle.swift in Sources */,
+				3288CDBE28B9FC3B007E969D /* Theme.swift in Sources */,
 				3288CDA928B9BE98007E969D /* ContentView.swift in Sources */,
 				3288CDA728B9BE98007E969D /* techArticles_iOSApp.swift in Sources */,
+				3288CDC228BA029C007E969D /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
