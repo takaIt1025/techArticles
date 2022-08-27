@@ -18,6 +18,7 @@ struct DailyScrum {
         self.id = id
         self.title = title
         self.attendees = attendees
+        self.lengthInMinutes = lengthInMinutes
         self.theme = theme
     }
 }
