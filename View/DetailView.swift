@@ -12,7 +12,11 @@ struct DetailView: View {
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
-                Label("Start meeting", systemImage: "timer")
+                NavigationLink(destination: HomeView()) {
+                    Label("Start meeting", systemImage: "timer")
+                        .font(.headline)
+                        .foregroundColor(.accentColor)
+                }
                 HStack {
                     Label("Length", systemImage: "clock")
                     Spacer()
@@ -28,6 +32,12 @@ struct DetailView: View {
                         .background(scrum.theme.mainColor)
                 }
                 .accessibilityElement(children: .combine)
+            }
+            Section(header: Text("Attendees")) {
+                ForEach(scrum.attendees) { attendee in
+                    Label(attendee.name, systemImage: "person")
+                    
+                }
             }
         }
     }
