@@ -10,9 +10,8 @@ import SwiftUI
 @main
 struct techArticles_iOSApp: App {
     var body: some Scene {
-        let scrum = DailyScrum.sampleData[0]
         WindowGroup {
-            CardView(scrum: scrum)
+            ScrumsView(scrums:  DailyScrum.sampleData)
         }
     }
 }
