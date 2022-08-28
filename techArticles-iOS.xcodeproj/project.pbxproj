@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		322E631D28BA5CCE0014B3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322E631C28BA5CCE0014B3A1 /* Assets.xcassets */; };
 		322E631F28BA80B20014B3A1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E631E28BA80B20014B3A1 /* DetailView.swift */; };
+		322E632128BB43E60014B3A1 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E632028BB43E60014B3A1 /* DetailEditView.swift */; };
 		3288CD9828B9BE98007E969D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD9728B9BE98007E969D /* Tests_iOS.swift */; };
 		3288CD9A28B9BE98007E969D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD9928B9BE98007E969D /* Tests_iOSLaunchTests.swift */; };
 		3288CDA428B9BE98007E969D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDA328B9BE98007E969D /* Tests_macOS.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		322E631C28BA5CCE0014B3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		322E631E28BA80B20014B3A1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		322E632028BB43E60014B3A1 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techArticles_iOSApp.swift; sourceTree = "<group>"; };
 		3288CD8028B9BE95007E969D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3288CD8628B9BE98007E969D /* techArticles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "techArticles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +170,7 @@
 				3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */,
 				3288CD8028B9BE95007E969D /* ContentView.swift */,
 				322E631E28BA80B20014B3A1 /* DetailView.swift */,
+				322E632028BB43E60014B3A1 /* DetailEditView.swift */,
 				3288CDCA28BA5675007E969D /* ScrumsView.swift */,
 				3288CDC128BA029C007E969D /* CardView.swift */,
 			);
@@ -333,6 +336,7 @@
 			files = (
 				3288CDC028BA00B7007E969D /* DailyScrum.swift in Sources */,
 				322E631F28BA80B20014B3A1 /* DetailView.swift in Sources */,
+				322E632128BB43E60014B3A1 /* DetailEditView.swift in Sources */,
 				3288CDC628BA4D2A007E969D /* TrailingIconLabelStyle.swift in Sources */,
 				3288CDBE28B9FC3B007E969D /* Theme.swift in Sources */,
 				3288CDCB28BA5675007E969D /* ScrumsView.swift in Sources */,

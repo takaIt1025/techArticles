@@ -33,6 +33,18 @@ extension DailyScrum {
             self.name = name
         }
     }
+    
+    struct Data {
+        var title: String = ""
+        var attendees: [Attendee] = []
+        var lengthInminutes: Double = 5
+        var theme: Theme = .seafoam
+    }
+    
+    var data: Data {
+        Data(title: title, attendees: attendees, lengthInminutes: Double(lengthInMinutes), theme: theme)
+    }
+    
 }
 
 extension DailyScrum {
