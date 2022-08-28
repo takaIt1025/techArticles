@@ -10,6 +10,8 @@
 		322E631D28BA5CCE0014B3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322E631C28BA5CCE0014B3A1 /* Assets.xcassets */; };
 		322E631F28BA80B20014B3A1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E631E28BA80B20014B3A1 /* DetailView.swift */; };
 		322E632128BB43E60014B3A1 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E632028BB43E60014B3A1 /* DetailEditView.swift */; };
+		322E632328BB68A00014B3A1 /* ThemeVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E632228BB68A00014B3A1 /* ThemeVIew.swift */; };
+		322E632528BB6AA20014B3A1 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E632428BB6AA20014B3A1 /* ThemePicker.swift */; };
 		3288CD9828B9BE98007E969D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD9728B9BE98007E969D /* Tests_iOS.swift */; };
 		3288CD9A28B9BE98007E969D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD9928B9BE98007E969D /* Tests_iOSLaunchTests.swift */; };
 		3288CDA428B9BE98007E969D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDA328B9BE98007E969D /* Tests_macOS.swift */; };
@@ -46,6 +48,8 @@
 		322E631C28BA5CCE0014B3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		322E631E28BA80B20014B3A1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		322E632028BB43E60014B3A1 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		322E632228BB68A00014B3A1 /* ThemeVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeVIew.swift; sourceTree = "<group>"; };
+		322E632428BB6AA20014B3A1 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techArticles_iOSApp.swift; sourceTree = "<group>"; };
 		3288CD8028B9BE95007E969D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3288CD8628B9BE98007E969D /* techArticles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "techArticles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,7 +173,9 @@
 			children = (
 				3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */,
 				3288CD8028B9BE95007E969D /* ContentView.swift */,
+				322E632228BB68A00014B3A1 /* ThemeVIew.swift */,
 				322E631E28BA80B20014B3A1 /* DetailView.swift */,
+				322E632428BB6AA20014B3A1 /* ThemePicker.swift */,
 				322E632028BB43E60014B3A1 /* DetailEditView.swift */,
 				3288CDCA28BA5675007E969D /* ScrumsView.swift */,
 				3288CDC128BA029C007E969D /* CardView.swift */,
@@ -334,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322E632528BB6AA20014B3A1 /* ThemePicker.swift in Sources */,
 				3288CDC028BA00B7007E969D /* DailyScrum.swift in Sources */,
 				322E631F28BA80B20014B3A1 /* DetailView.swift in Sources */,
 				322E632128BB43E60014B3A1 /* DetailEditView.swift in Sources */,
@@ -342,6 +349,7 @@
 				3288CDCB28BA5675007E969D /* ScrumsView.swift in Sources */,
 				3288CDA928B9BE98007E969D /* ContentView.swift in Sources */,
 				3288CDA728B9BE98007E969D /* techArticles_iOSApp.swift in Sources */,
+				322E632328BB68A00014B3A1 /* ThemeVIew.swift in Sources */,
 				3288CDC228BA029C007E969D /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
