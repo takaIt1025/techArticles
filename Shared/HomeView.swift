@@ -17,7 +17,9 @@ struct HomeView: View {
                 }
                 Section(header: Text("トレンド")) {
                     ForEach(articles) { article in
+                        NavigationLink(destination: ArticleDetailView(article: article)){
                         Text(article.title)
+                        }
                     }
                 }
                 
