@@ -11,13 +11,19 @@ struct HomeView: View {
     var articles: [Article]
     var body: some View {
         NavigationView {
-            List(0..<articles.count) { index in
-                NavigationLink(destination: Text("\(articles[index].body)")) {
-                    Text("\(articles[index].title)")
+            List {
+                VStack{
+                    Text("技術書のランキングはここに表示したい")
                 }
+                Section(header: Text("トレンド")) {
+                    ForEach(articles) { article in
+                        Text(article.title)
+                    }
+                }
+                
             }
-            .navigationTitle("Qiita")
-            .navigationBarTitleDisplayMode(.inline)
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Qiita", displayMode: .inline)
             .toolbar {
                 /// ナビゲーションバー左
                 ToolbarItem(placement: .navigationBarTrailing){
@@ -25,7 +31,6 @@ struct HomeView: View {
                         Image(systemName: "magnifyingglass")
                     }
                 }
-                
             }
         }
         
