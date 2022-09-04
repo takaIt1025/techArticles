@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322E632E28C332F40014B3A1 /* article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E632D28C332F40014B3A1 /* article.swift */; };
 		3288CD9828B9BE98007E969D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD9728B9BE98007E969D /* Tests_iOS.swift */; };
 		3288CD9A28B9BE98007E969D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD9928B9BE98007E969D /* Tests_iOSLaunchTests.swift */; };
 		3288CDA428B9BE98007E969D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDA328B9BE98007E969D /* Tests_macOS.swift */; };
 		3288CDA628B9BE98007E969D /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CDA528B9BE98007E969D /* Tests_macOSLaunchTests.swift */; };
 		3288CDA728B9BE98007E969D /* techArticles_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */; };
 		3288CDA828B9BE98007E969D /* techArticles_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */; };
-		3288CDA928B9BE98007E969D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD8028B9BE95007E969D /* ContentView.swift */; };
-		3288CDAA28B9BE98007E969D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD8028B9BE95007E969D /* ContentView.swift */; };
+		3288CDA928B9BE98007E969D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD8028B9BE95007E969D /* HomeView.swift */; };
+		3288CDAA28B9BE98007E969D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288CD8028B9BE95007E969D /* HomeView.swift */; };
 		3288CDAB28B9BE98007E969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288CD8128B9BE98007E969D /* Assets.xcassets */; };
 		3288CDAC28B9BE98007E969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288CD8128B9BE98007E969D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -37,8 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		322E632D28C332F40014B3A1 /* article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = article.swift; sourceTree = "<group>"; };
 		3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techArticles_iOSApp.swift; sourceTree = "<group>"; };
-		3288CD8028B9BE95007E969D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3288CD8028B9BE95007E969D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3288CD8128B9BE98007E969D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3288CD8628B9BE98007E969D /* techArticles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "techArticles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3288CD8C28B9BE98007E969D /* techArticles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "techArticles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +85,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322E632C28C332C70014B3A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				322E632D28C332F40014B3A1 /* article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3288CD7928B9BE94007E969D = {
 			isa = PBXGroup;
 			children = (
+				322E632C28C332C70014B3A1 /* Models */,
 				3288CD7E28B9BE95007E969D /* Shared */,
 				3288CD8D28B9BE98007E969D /* macOS */,
 				3288CD9628B9BE98007E969D /* Tests iOS */,
@@ -98,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */,
-				3288CD8028B9BE95007E969D /* ContentView.swift */,
+				3288CD8028B9BE95007E969D /* HomeView.swift */,
 				3288CD8128B9BE98007E969D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -299,7 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3288CDA928B9BE98007E969D /* ContentView.swift in Sources */,
+				3288CDA928B9BE98007E969D /* HomeView.swift in Sources */,
+				322E632E28C332F40014B3A1 /* article.swift in Sources */,
 				3288CDA728B9BE98007E969D /* techArticles_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3288CDAA28B9BE98007E969D /* ContentView.swift in Sources */,
+				3288CDAA28B9BE98007E969D /* HomeView.swift in Sources */,
 				3288CDA828B9BE98007E969D /* techArticles_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
