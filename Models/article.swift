@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Article {
+struct Article: Identifiable{
     // 本文
     let body: String
     // この記事へのコメントの数
