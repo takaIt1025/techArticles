@@ -13,8 +13,14 @@ struct ArticleDetailView: View {
     
     var body: some View{
         VStack{
-            Text(article.body)
+
+            ForEach(article.tags, id: \.self) { tag in
+                Text(tag.name)
+            }
+            
+            Text("タグ：　\(article.tags[0].name) 作成日： \(article.created_at) \n \(article.body)")
         }
+        
     }
 }
 

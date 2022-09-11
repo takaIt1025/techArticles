@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    var articles: [Article]
+    @ObservedObject var store = HomeViewPresenter()
     var body: some View {
         NavigationView {
             List {
@@ -16,13 +16,13 @@ struct HomeView: View {
                     Text("技術書のランキングはここに表示したい")
                 }
                 Section(header: Text("トレンド")) {
-                    ForEach(articles) { article in
+                    ForEach(store.articles) { article in
                         NavigationLink(destination: ArticleDetailView(article: article)){
                         Text(article.title)
                         }
                     }
                 }
-                
+
             }
             .listStyle(GroupedListStyle())
             .navigationBarTitle("Qiita", displayMode: .inline)
@@ -40,10 +40,8 @@ struct HomeView: View {
 
 }
 
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(articles: Article.sampleData)
+        HomeView()
     }
 }
