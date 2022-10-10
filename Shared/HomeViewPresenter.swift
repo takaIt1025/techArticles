@@ -17,8 +17,9 @@ class HomeViewPresenter: ObservableObject {
     func load() {
         let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=10")!
         URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else {return}
                     DispatchQueue.main.async {
-                        self.articles = try! JSONDecoder().decode([Article].self, from: data!)
+                        self.articles = try! JSONDecoder().decode([Article].self, from: data)
                     }
                 }.resume()
     }
