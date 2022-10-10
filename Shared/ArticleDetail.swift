@@ -12,7 +12,7 @@ struct ArticleDetailView: View {
     var article: Article
     
     var body: some View{
-        VStack{
+        ScrollView{
 
             ForEach(article.tags, id: \.self) { tag in
                 Text(tag.name)
