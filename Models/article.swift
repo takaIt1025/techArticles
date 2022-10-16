@@ -10,6 +10,8 @@ import Foundation
 struct Article: Decodable, Identifiable{
     // 本文
     let body: String
+    // 本文_HTML
+    let rendered_body: String
     // この記事へのコメントの数
     let comments_count: Int
     // データが作成された日時
@@ -41,6 +43,7 @@ extension Article {
     [
         Article(
             body: "<h1>記事2,APIから情報取得してからここの部分は修正</h1>",
+            rendered_body: "<h1>記事2,APIから情報取得してからここの部分は修正</h1>",
             comments_count: 10,
             created_at: "2020年08月20日",
             id: "09c47ee536d8c0199034",
@@ -55,6 +58,7 @@ extension Article {
         ),
         Article(
             body: "<h1>記事3,APIから情報取得してからここの部分は修正</h1>",
+            rendered_body: "<h1>記事2,APIから情報取得してからここの部分は修正</h1>",
             comments_count: 3,
             created_at: "2022年05月18日",
             id: "fe09b2deb152b2d36c0d",
