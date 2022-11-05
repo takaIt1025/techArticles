@@ -1,0 +1,125 @@
+ 
+
+  /***** default styles*******************************************/
+  
+  body {
+    font-size: 13px;
+    *font-size: small;
+    /* IE7 */
+    *font: x-small;
+    /* IE6 */
+  }
+  
+  * {
+    line-height: 1.6;
+    font-size: 100%;
+  }
+  
+  /***** text styles*******************************************/
+  
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    color: #333333;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    word-wrap: break-word;
+  }
+  
+  p {
+    line-height: 1.9;
+    margin-top: 1.5em;
+    text-align: justify;
+    text-justify: distribute;
+  }
+  
+  p,
+  ul,
+  ol,
+  dl,
+  table,
+  pre {
+    font-size: 115%;
+  }
+  
+
+  img {
+    border: 0;
+    vertical-align: bottom;
+  }
+  
+  /***** Link styles*******************************************/
+  
+  #out a {
+    text-decoration: none;
+  }
+  
+  #out a:link {
+    color: #337ed2;
+    border-bottom: 1px solid #56aee1;
+  }
+  
+  #out a:visited {
+    color: #56aee1;
+    border-bottom: 1px solid #56aee1;
+  }
+  
+  #out a:hover {
+    color: #337ed2;
+    border-bottom: 1px solid #337ed2;
+  }
+  
+  /***** layout styles*******************************************/
+
+  
+h1 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.1em;
+}
+
+h2 {
+    font-size: 1.6em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.1em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+.code-frame {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    background-color: #364549;
+    color: #e3e3e3;
+}
+
+.code {
+    display: block;
+    -webkit-text-size-adjust: 100%;
+    color: inherit;
+    font-family: inherit;
+}
+
+.code-lang {
+    color: #eee;
+    display: inline-block;
+    background-color: #777;
+    padding: 2px 4px;
+    transform: translateY(-1em);
+    word-break: break-all;
+}
+
+a {
+    color: #4aac00;
+}
+
+img {
+    border: 1px solid rgba(0,0,0,.12);
+    margin: 1.5em 0;
+    max-width: 100%;
+}

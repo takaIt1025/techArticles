@@ -23,6 +23,8 @@
 		3288CDAB28B9BE98007E969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288CD8128B9BE98007E969D /* Assets.xcassets */; };
 		3288CDAC28B9BE98007E969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288CD8128B9BE98007E969D /* Assets.xcassets */; };
 		32A2619A28FC54D900582809 /* WebVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2619928FC54D900582809 /* WebVIew.swift */; };
+		32A2619C291631FD00582809 /* WebVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2619928FC54D900582809 /* WebVIew.swift */; };
+		32A2619E291633B500582809 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 32A2619D291633B500582809 /* style.css */; };
 		48AADE6B13D0090200C9698E /* Pods_techArticles_iOS__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6794B120FB48EC25695320F0 /* Pods_techArticles_iOS__macOS_.framework */; };
 		BB9B831E05795C3CFD1D859C /* Pods_techArticles_iOS__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DED78378C4097BBB026E72 /* Pods_techArticles_iOS__iOS_.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,7 @@
 		3288CDA328B9BE98007E969D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		3288CDA528B9BE98007E969D /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		32A2619928FC54D900582809 /* WebVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVIew.swift; sourceTree = "<group>"; };
+		32A2619D291633B500582809 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		4057F9FB0E1913182E92748A /* Pods-techArticles-iOS (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techArticles-iOS (macOS).release.xcconfig"; path = "Target Support Files/Pods-techArticles-iOS (macOS)/Pods-techArticles-iOS (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		6794B120FB48EC25695320F0 /* Pods_techArticles_iOS__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_techArticles_iOS__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		802ABBC1E499C04714D19597 /* Pods-techArticles-iOS (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techArticles-iOS (iOS).release.xcconfig"; path = "Target Support Files/Pods-techArticles-iOS (iOS)/Pods-techArticles-iOS (iOS).release.xcconfig"; sourceTree = "<group>"; };
@@ -127,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				322E632D28C332F40014B3A1 /* article.swift */,
-				32A2619928FC54D900582809 /* WebVIew.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,10 +151,13 @@
 		3288CD7E28B9BE95007E969D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				32A2619B291631EB00582809 /* View */,
 				3288CD7F28B9BE95007E969D /* techArticles_iOSApp.swift */,
 				3288CD8028B9BE95007E969D /* HomeView.swift */,
+				32A2619928FC54D900582809 /* WebVIew.swift */,
 				3288B03E28C4BE0A00C67668 /* ArticleDetail.swift */,
 				3288CD8128B9BE98007E969D /* Assets.xcassets */,
+				32A2619D291633B500582809 /* style.css */,
 				3288B04128CDBD8B00C67668 /* HomeViewPresenter.swift */,
 			);
 			path = Shared;
@@ -193,6 +198,13 @@
 				3288CDA528B9BE98007E969D /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		32A2619B291631EB00582809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3288CDAB28B9BE98007E969D /* Assets.xcassets in Resources */,
+				32A2619E291633B500582809 /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3288B04028C4BE0A00C67668 /* ArticleDetail.swift in Sources */,
+				32A2619C291631FD00582809 /* WebVIew.swift in Sources */,
 				3288CDAA28B9BE98007E969D /* HomeView.swift in Sources */,
 				3288B04328CDBD8B00C67668 /* HomeViewPresenter.swift in Sources */,
 				3288CDA828B9BE98007E969D /* techArticles_iOSApp.swift in Sources */,

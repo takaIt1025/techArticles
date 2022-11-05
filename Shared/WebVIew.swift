@@ -20,24 +20,23 @@ struct WebView: UIViewRepresentable {
         webView.scrollView.bounces = false
         
         let htmlStart = """
-        <HTML><HEAD><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\">
-            <style>
-                body {
-                    line-height: 1.5;
-                    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-                    font-size: 18px;
-                    padding: 12px;
-                }
-                ul > li {
-                    line-height: 1.8;
-                }
-                
-            </style>
-            </HEAD><BODY>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>Document</title>
+        </head>
+        <body>
         """
-        let htmlEnd = "</BODY></HTML>"
+        let htmlEnd = "</body></html>"
         let html = htmlStart + text + htmlEnd
-        webView.loadHTMLString(html, baseURL: nil)
+        /// CSSのファイルURLを取得する
+        let css = Bundle.main.url(forResource: "style", withExtension: "css")
+        webView.loadHTMLString(html, baseURL: css)
+        
         return webView
     }
     
