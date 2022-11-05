@@ -36,6 +36,11 @@ struct HomeView: View {
             }
             .refreshable {
                 presenter.load()
+                
+            }
+            .alert(isPresented: $presenter.isError) {
+            Alert(title: Text("通信エラー"), message: Text("情報の取得に失敗しました。時間を置いてから再度お試しください。"),
+                  dismissButton: .default(Text("OK"), action: {}))
             }
         }
         
