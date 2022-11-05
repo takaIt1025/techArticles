@@ -34,6 +34,9 @@ struct HomeView: View {
                     }
                 }
             }
+            .refreshable {
+                presenter.load()
+            }
         }
         
     }
