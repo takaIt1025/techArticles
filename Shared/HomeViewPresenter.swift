@@ -16,7 +16,6 @@ class HomeViewPresenter: ObservableObject {
         load()
     }
     
-    
     func load() {
         print("####test")
         let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=10")!
@@ -34,4 +33,8 @@ class HomeViewPresenter: ObservableObject {
         }.resume()
     }
     
+    // リフレッシュ時の処理を定義
+    func refresh() {
+        load()
+    }
 }
