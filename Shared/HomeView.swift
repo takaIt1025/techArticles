@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var store = HomeViewPresenter()
+    @ObservedObject var presenter = HomeViewPresenter()
     var body: some View {
         NavigationView {
             List {
@@ -16,7 +16,7 @@ struct HomeView: View {
                     Text("技術書のランキングはここに表示したい")
                 }
                 Section(header: Text("トレンド")) {
-                    ForEach(store.articles) { article in
+                    ForEach(presenter.articles) { article in
                         NavigationLink(destination: ArticleDetailView(article: article)){
                         Text(article.title)
                         }
